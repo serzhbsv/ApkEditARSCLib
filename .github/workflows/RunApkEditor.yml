@@ -1,4 +1,4 @@
-name: Android CI
+name: Tested ApkEdit decompile res
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
     - name: Run Apk Edit
       run: chmod +x gradlew
     - name: Run
-      run: ./
+      run: java -jar ./APKEditor.jar d -i test.apk -o test_json
       
     - uses: actions/upload-artifact@v4
       with:
