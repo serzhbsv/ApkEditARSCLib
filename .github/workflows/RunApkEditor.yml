@@ -27,4 +27,4 @@ jobs:
       with:
         name: Save-Result
         path: |
-               /*
+               ./*
