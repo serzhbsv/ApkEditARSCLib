@@ -25,7 +25,7 @@ jobs:
       run: java -jar ./APKEditor-1.4.2.jar info -v -resources -i ./HeroTale134modBedo13.apk >>./test_json
     - name: Artifact
       if: always()
-    - uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
         name: Save-Result
         path: |
