@@ -20,8 +20,8 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Run Apk Edit
-      run: chmod +x gradlew
+  ##  - name: Run Apk Edit
+  ##   run: chmod +x gradlew
     - name: Run
       run: java -jar ./APKEditor-1.4.2.jar d -i ./resources.arsc -o test_json
       
