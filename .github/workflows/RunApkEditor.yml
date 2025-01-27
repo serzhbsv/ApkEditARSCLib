@@ -23,7 +23,7 @@ jobs:
     - name: Run Apk Edit
       run: chmod +x gradlew
     - name: Run
-      run: java -jar ./APKEditor-1.4.2.jar d -i test.apk -o test_json
+      run: java -jar ./APKEditor-1.4.2.jar d -i ./resources.arsc -o test_json
       
     - uses: actions/upload-artifact@v4
       with:
